@@ -45,6 +45,10 @@ footer {
     margin: 0 auto;
 }
 
+header nav {
+    color: var(--secondary-color);
+}
+
 .hero {
     position: relative;
 }
@@ -62,7 +66,7 @@ h1 {
     width: 100%;
     padding: 10px;
     text-align: center;
-    opacity: .8;
+    opacity: .9;
     background-color: var(--accent2-color);
 
 }
@@ -71,7 +75,7 @@ h1 {
     float: right;
     position: relative;
     width: 125px;
-    bottom: -3px;
+    bottom: -23px;
 }
 
 .hero article {
@@ -79,10 +83,16 @@ h1 {
     bottom: 20px;
     text-align: left;
     background-color: var(--accent2-color);
-    opacity: .8;
+    opacity: .9;
     color: var(--text-color);
     width: 95%;
     padding: 5px;
+}
+
+.hero article p {
+    width: 650px;
+    text-align: left;
+    font-size: smaller;
 }
 
 section h2 {
