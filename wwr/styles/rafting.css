@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #000080;
+    /* Navy Blue for base */
+    --secondary-color: #FF4500;
+    /* Orange Red For buttons/etc bright and responding */
+    --accent1-color: #50c890;
+    /* Emerald Green to accent base */
+    --accent2-color: #708090;
+    /* Slate Grey for accent secondary */
+    --text-color: #FFFFFF;
+    /* White for text */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--body-font);
+    color: #000;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    color: var(--text-color);
+    top: 20px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: .8;
+    background-color: var(--accent2-color);
+
+}
+
+.hero article img {
+    float: right;
+    position: relative;
+    width: 125px;
+    bottom: -3px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    text-align: left;
+    background-color: var(--accent2-color);
+    opacity: .8;
+    color: var(--text-color);
+    width: 95%;
+    padding: 5px;
+}
+
+section h2 {
+    position: relative;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+    padding: 10px;
+    width: 106%;
+    left: -24px;
+}
+
+section p {
+    position: relative;
+    left: auto;
+    padding: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+footer p {
+    border-top: var(--accent2-color);
+    margin-top: 5px;
+    position: relative;
+    padding-top: 15px;
+    top: 15px;
+    left: -28px;
+}
+
+footer nav {
+    position: relative;
+    padding: 0px;
+    left: -18px;
+}
