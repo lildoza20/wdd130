@@ -9,6 +9,13 @@ body {
     font-family: Roboto, Arial, sans-serif;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 :root {
     --background-color: darkblue;
     --sec-background-color: white;
@@ -19,8 +26,27 @@ body {
     --height-align: auto;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+}
+
 main {
     max-width: 840px;
+    grid-column: 2;
+    margin: var(--padding);
+}
+
+aside {
+    width: 25rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: var(--sec-background-color);
+    padding: var(--padding);
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 main img {
@@ -28,9 +54,8 @@ main img {
     height: var(--height-align);
     float: right;
     margin: 0 0 1rem 1rem;
-    position: absolute;
-    left: 400px;
-    top: 230px;
+    padding: var(--padding);
+    position: relative;
 }
 
 p {
@@ -42,17 +67,31 @@ p {
 nav {
     background-color: var(--background-color);
     padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: var(--sec-background-color);
     display: block;
-    padding: var(--padding);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--background-color);
     top: 50px;
+    border-bottom: 1px solid rgb(0 0 0 / 0.3);
+    padding-bottom: var(--padding);
+}
+
+h2 {
+    display: relative;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 img {
@@ -63,27 +102,17 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-aside {
-    width: 20em;
-    margin: 1rem;
-    border: var(--border);
-    /* 1 */
-    padding: var(--padding);
-    background-color: var(--sec-background-color);
-    color: var(--text-color);
-    text-align: var(--text-align);
-    position: relative;
-}
-
 aside img {
-    width: 200px;
+    width: 100%;
     height: var(--height-align);
+    display: block;
+    margin: 0 auto;
 }
 
 aside h2 {
     position: absolute;
     top: 20px;
-    left: 100px;
+    left: 50%;
 }
 
 footer {
