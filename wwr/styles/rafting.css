@@ -45,8 +45,27 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
 header nav {
     color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav a {
+    flex: 1;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px 0px;
 }
 
 .hero {
@@ -105,14 +124,38 @@ section h2 {
     left: -24px;
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.history img {
+    width: 250px;
+    position: relative;
+    justify-self: center;
+}
+
 section p {
     position: relative;
     left: auto;
-    padding: 10px;
+    margin: 0 auto;
 }
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 footer p {
@@ -122,10 +165,11 @@ footer p {
     padding-top: 15px;
     top: 15px;
     left: -28px;
+    text-align: center;
 }
 
 footer nav {
     position: relative;
+    grid-column-start: end;
     padding: 0px;
-    left: -18px;
 }
