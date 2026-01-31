@@ -1,11 +1,11 @@
 :root {
     --primary-color: #000080;
     /* Navy Blue for base */
-    --secondary-color: #FF4500;
+    --secondary-color: #D63A00;
     /* Orange Red For buttons/etc bright and responding */
-    --accent1-color: #50c890;
+    --accent1-color: #2A8057;
     /* Emerald Green to accent base */
-    --accent2-color: #708090;
+    --accent2-color: #5B6B7A;
     /* Slate Grey for accent secondary */
     --text-color: #FFFFFF;
     /* White for text */
