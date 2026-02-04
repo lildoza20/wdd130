@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #000080;
+    /* Navy Blue for base */
+    --secondary-color: #D63A00;
+    /* Orange Red For buttons/etc bright and responding */
+    --accent1-color: #2A8057;
+    /* Emerald Green to accent base */
+    --accent2-color: #5B6B7A;
+    /* Slate Grey for accent secondary */
+    --text-color: #FFFFFF;
+    /* White for text */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+}
+
+main nav {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+}
+
+main map {
+    max-width: 400px;
+}
+
+main form {
+    padding-left: 10px;
+}
+
+main > div {
+    display: flex;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: .5rem;
+    width: auto;
+}
+
+form {
+    display: flex;
+    flex: .95;
+    max-width: 400px;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 4px;
+}
+
+button {
+    padding: .5rem;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
+
+.row #newsletter + label {
+    width: auto;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.row > label {
+    width: 110px;
+    text-align: left;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: flex-start;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid rgb(0, 0, 0);
+    gap: 1rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+section h2 {
+    display: grid;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+section article {
+    text-align: center;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+header nav {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav a {
+    flex: 1;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+    border: 1px solid var(--accent2-color);
+}
+
+footer p {
+    border-top: var(--accent2-color);
+    margin-top: 5px;
+    position: relative;
+    top: 15px;
+    left: -28px;
+    text-align: center;
+}
+
+footer nav {
+    position: relative;
+    grid-column-start: end;
+    padding: 0px;
+}
