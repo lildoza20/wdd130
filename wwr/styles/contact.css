@@ -1,6 +1,4 @@
 :root {
-    --primary-color: #000080;
-    /* Navy Blue for base */
     --secondary-color: #D63A00;
     /* Orange Red For buttons/etc bright and responding */
     --accent1-color: #2A8057;
@@ -9,8 +7,6 @@
     /* Slate Grey for accent secondary */
     --text-color: #FFFFFF;
     /* White for text */
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
