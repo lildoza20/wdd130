@@ -1,14 +1,9 @@
 :root {
     --primary-color: #000080;
-    /* Navy Blue for base */
     --secondary-color: #D63A00;
-    /* Orange Red For buttons/etc bright and responding */
     --accent1-color: #2A8057;
-    /* Emerald Green to accent base */
     --accent2-color: #5B6B7A;
-    /* Slate Grey for accent secondary */
     --text-color: #FFFFFF;
-    /* White for text */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -87,7 +82,6 @@ h1 {
     text-align: center;
     opacity: .9;
     background-color: var(--accent2-color);
-
 }
 
 .hero article img {
@@ -156,13 +150,14 @@ section p {
 footer {
     display: grid;
     grid-template-columns: 1fr;
+    padding: .5rem;
+    border: 1px solid var(--accent2-color);
 }
 
 footer p {
     border-top: var(--accent2-color);
     margin-top: 5px;
     position: relative;
-    padding-top: 15px;
     top: 15px;
     left: -28px;
     text-align: center;
@@ -172,4 +167,148 @@ footer nav {
     position: relative;
     grid-column-start: end;
     padding: 0px;
+}
+
+.contact-page input,
+.contact-page textarea,
+.contact-page button {
+    width: 100%;
+}
+
+.contact-page main div {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+}
+
+.contact-page h1 {
+    position: static;
+    top: auto;
+    width: auto;
+    padding: 0;
+    text-align: center;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.contact-page .title {
+    position: static;
+    top: auto;
+    width: auto;
+    padding: 0;
+    text-align: center;
+    opacity: 1;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.contact-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page .map {
+    max-width: 400px;
+}
+
+.contact-page main form {
+    padding-left: 10px;
+}
+
+.contact-page main > div {
+    display: flex;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 1rem;
+}
+
+.contact-page input[type="radio"],
+.contact-page input[type="checkbox"] {
+    margin-right: .5rem;
+    width: auto;
+}
+
+.contact-page form {
+    display: flex;
+    flex: .95;
+    max-width: 400px;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"] {
+    padding: 4px;
+}
+
+.contact-page button {
+    padding: .5rem;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
+
+.contact-page .row #newsletter + label {
+    width: auto;
+    flex: 1;
+}
+
+.contact-page .row {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.contact-page .row > label {
+    width: 110px;
+    text-align: left;
+}
+
+.contact-page .contact-info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: .25rem;
+    margin: 0 auto;
+}
+
+.contact-page .column {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: flex-start;
+}
+
+.contact-page textarea {
+    height: 90px;
+    resize: none;
+}
+
+.contact-page .title {
+    font-size: xx-large;
+}
+
+.contact-page section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid rgb(0, 0, 0);
+    gap: 1rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.contact-page section h2 {
+    display: grid;
+    text-align: center;
+    grid-column: 1 / -1;
+    width: auto;
+    left: auto;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0;
+}
+
+.contact-page section article {
+    text-align: center;
 }
