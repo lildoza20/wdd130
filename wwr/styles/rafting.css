@@ -183,6 +183,7 @@ footer nav {
 
 .contact-page h1 {
     position: static;
+    font-size: xx-large;
     top: auto;
     width: auto;
     padding: 0;
@@ -283,10 +284,6 @@ footer nav {
 .contact-page textarea {
     height: 90px;
     resize: none;
-}
-
-.contact-page .title {
-    font-size: xx-large;
 }
 
 .contact-page section {
