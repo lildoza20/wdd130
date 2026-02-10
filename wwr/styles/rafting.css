@@ -310,6 +310,11 @@ footer nav {
     text-align: center;
 }
 
+.home .newsletter,
+.home .newsletter * {
+    color: var(--primary-color);
+}
+
 .home .cta-box,
 .home .cta-box *,
 .home .grid-item,
