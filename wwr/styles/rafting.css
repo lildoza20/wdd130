@@ -309,3 +309,212 @@ footer nav {
 .contact-page section article {
     text-align: center;
 }
+
+.home h3,
+.home div p,
+.home .home-cta h2 {
+    color: var(--text-color);
+}
+
+.home main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.home .hero {
+    position: relative;
+}
+
+.home .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    color: var(--text-color);
+    padding: .75rem 1.25rem;
+}
+
+.home .home-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: start;
+}
+
+.home .cta-box {
+    padding: 1.25rem;
+    background: var(--accent2-color);
+    color: var(--text-color);
+}
+
+.home .cta-box h2 {
+    margin-top: 0;
+}
+
+.home .cta {
+    display: inline-block;
+    margin-top: .75rem;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.home .home-cta .cta {
+    display: inline-block;
+    margin-top: .75rem;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--secondary-color);
+}
+
+.home .newsletter {
+    display: grid;
+    padding: 1.25rem;
+    background: var(--text-color);
+}
+
+.home .newsletter h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid rgb(0, 0, 0, .6);
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.home .newsletter .field {
+    margin-bottom: .75rem;
+    color: var(--primary-color);
+}
+
+.home .newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .6rem;
+}
+
+.home .newsletter label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.home .newsletter button {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.home .home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1rem 0;
+    margin-top: 1rem;
+}
+
+.home .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home .grid-item {
+    padding: 1rem;
+    background: var(--accent2-color);
+}
+
+.trip .trip-cta {
+    background: var(--accent2-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.trip .trip-cta h1 {
+    position: static;
+    padding: 0;
+}
+
+.trip .trip-cta p {
+    margin: .5rem 0;
+    color: var(--text-color);
+}
+
+.trip .trip-cta .cta {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.trip .trip-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.trip .trip-card {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.trip .trip-card h2 {
+    color: var(--text-color);
+    margin-top: .5rem;
+}
+
+.trip .trip-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.trip .trip-table {
+    margin: 1rem 0;
+    background: var(--accent2-color);
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.trip .trip-table h2 {
+    display: grid;
+    color: var(--text-color);
+    margin-bottom: .5rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.trip table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: .5rem 0;
+}
+
+.trip th,
+.trip td {
+    padding: .5rem;
+    text-align: left;
+}
+
+.trip thead th {
+    background: var(--accent1-color);
+}
