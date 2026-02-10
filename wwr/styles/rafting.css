@@ -310,6 +310,13 @@ footer nav {
     text-align: center;
 }
 
+.home .cta-box,
+.home .cta-box *,
+.home .grid-item,
+.home .grid-item * {
+    color: var(--text-color);
+}
+
 .home h3,
 .home div p,
 .home .home-cta h2 {
@@ -384,6 +391,7 @@ footer nav {
     display: grid;
     padding: 1.25rem;
     background: var(--text-color);
+    color: var(--primary-color);
 }
 
 .home .newsletter h2 {
@@ -409,6 +417,7 @@ footer nav {
     display: block;
     font-weight: 600;
     margin-bottom: .25rem;
+    color: var(--primary-color);
 }
 
 .home .newsletter button {
